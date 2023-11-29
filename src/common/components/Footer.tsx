@@ -14,8 +14,8 @@ function Footer() {
     };
 
     return (
-        <footer className="flex justify-end w-11/12 pb-8 pt-8">
-            <div className={"w-5/12 flex justify-around md:justify-between md:w-2/12"}>
+        <footer className="w-11/12 pb-8 pt-8 md:flex md:justify-end ">
+            <div className={"w-6/12 flex justify-between md:w-2/12"}>
                 <button className={"font-montserrat text-black"}>{t('footer_button_contact')}</button>
                 <button className={"font-montserrat text-black"} onClick={changeLanguage}>EN</button>
             </div>
