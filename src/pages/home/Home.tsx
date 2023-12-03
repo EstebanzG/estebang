@@ -23,7 +23,7 @@ function Home() {
                 <Stack/>
                 <Studies/>
             </div>
-            <Footer/>
+            <Footer isBlackPage={false} isHome={true}/>
         </div>
     );
 }
