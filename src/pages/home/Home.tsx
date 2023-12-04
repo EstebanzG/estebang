@@ -1,5 +1,5 @@
 import React from 'react';
-import estebanImage from './asset/esteban.png';
+import estebanImage from './asset/img/esteban.png';
 import Projects from "./components/Projects";
 import Stack from "./components/Stack";
 import Studies from "./components/Studies";
@@ -23,7 +23,7 @@ function Home() {
                 <Stack/>
                 <Studies/>
             </div>
-            <Footer isBlackPage={false} isHome={true}/>
+            <Footer/>
         </div>
     );
 }

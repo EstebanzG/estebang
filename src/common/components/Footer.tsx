@@ -5,12 +5,7 @@ const FR = 'fr';
 
 const EN = 'en';
 
-interface props {
-    isBlackPage: boolean;
-    isHome: boolean;
-}
-
-function Footer({isBlackPage, isHome}: props) {
+function Footer() {
     const {t, i18n } = useTranslation();
 
     const changeLanguage = () => {
@@ -19,15 +14,10 @@ function Footer({isBlackPage, isHome}: props) {
     };
 
     return (
-        <footer className="w-11/12 pb-8 pt-8 md:flex md:justify-end ">
-            <div className={`w-6/12 flex justify-between md:w-2/12 ${isBlackPage ? 'text-white' : 'text-black'}`}>
-                {!isHome ?
-                    <a className={"font-montserrat"} href={"/"} >{t('Home')}</a>
-                    :
-                    ''
-                }
+        <footer className="w-11/12 pb-8 pt-8 h-fit md:flex md:justify-end">
+            <div className={`'text-black w-6/12 md:w-2/12 flex justify-between`}>
                 <button className={"font-montserrat"}  >{t('footer_button_contact')}</button>
-                <button className={"font-montserrat"} onClick={changeLanguage}>EN</button>
+                <button className={"font-montserrat"} onClick={changeLanguage}>{t('footer_language_select')}</button>
             </div>
         </footer>
     );
