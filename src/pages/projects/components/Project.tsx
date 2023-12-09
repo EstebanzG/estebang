@@ -18,7 +18,7 @@ function Project({projectName, technologies, description, imageName, gitUrl}: pr
             <h3 className={"w-full mb-2 font-montserrat font-semibold"}>{ projectName }</h3>
             <div className={"md:flex md:justify-between"}>
                 <div className={"md:w-5/12"}>
-                    <ul className={"w-full mb-2 flex justify-between flex-wrap font-montserrat text-gray-300 md:w-fit md:mb-5"}>
+                    <ul className={"w-full flex justify-between flex-wrap font-montserrat text-gray-500 md:w-fit md:mb-5"}>
                         {technologies.map((technology, index) => (
                             <Label key={index} text={technology} />
                         ))}

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Home from "./pages/home/Home";
 import './common/i18n'
 import Projects from "./pages/projects/Projects";
+import Contact from "./pages/contact/Contact";
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="" element={ <Home />} />
           <Route path="/projects" element={ <Projects />} />
+          <Route path="/contact" element={ <Contact />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>

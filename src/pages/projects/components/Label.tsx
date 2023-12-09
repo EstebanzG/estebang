@@ -6,7 +6,7 @@ interface props {
 
 function Label({text} : props) {
     return (
-        <li className={"border pl-1 pr-1 rounded-full text-xs h-fit mr-2 w-fit"}>{ text }</li>
+        <li className={"border pl-1 pr-1 rounded-full text-xs h-fit mr-2 mb-2 w-fit"}>{ text }</li>
     );
 }
 

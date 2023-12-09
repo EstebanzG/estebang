@@ -7,7 +7,7 @@ function Projects() {
     const { t } = useTranslation();
 
     return (
-        <div className={"h-full min-h-screen w-full bg-black flex flex-col items-center text-white"}>
+        <div className={"h-full min-h-screen w-full flex flex-col items-center"}>
             <Navbar pageName={t('navbar_title_projects')}/>
             <div className={"w-11/12 flex flex-col justify-center items-center mb-10"}>
                 <Project
@@ -24,7 +24,7 @@ function Projects() {
                     imageName={"taskManager.png"}
                     gitUrl={"https://github.com/EstebanzG/ServicesManager"}
                 />
-                <hr className={"bg-white w-6/12 mt-8 mb-4"}/>
+                <hr className={"bg-gray-500 w-6/12 mt-8 mb-4"}/>
                 <Project
                     projectName={t('project_letsgetrich_title')}
                     technologies={[
@@ -38,7 +38,7 @@ function Projects() {
                     imageName={"letsGetRich.png"}
                     gitUrl={"https://github.com/EstebanzG/LetsGetRich"}
                 />
-                <hr className={"bg-white w-6/12 mt-8 mb-4"}/>
+                <hr className={"bg-gray-500 w-6/12 mt-8 mb-4"}/>
                 <Project
                     projectName={t('project_taskmanager_title')}
                     technologies={[
