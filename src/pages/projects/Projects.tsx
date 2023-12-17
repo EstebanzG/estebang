@@ -3,12 +3,15 @@ import { useTranslation } from 'react-i18next';
 import Navbar from "../../common/components/Navbar";
 import Project from "./components/Project";
 
+const PROJECT = 2;
+
 function Projects() {
     const { t } = useTranslation();
 
     return (
         <div className={"h-full min-h-screen w-full flex flex-col items-center"}>
-            <Navbar pageName={t('navbar_title_projects')}/>
+            <Navbar currentPage={PROJECT}/>
+            <h1 className={'w-11/12 font-montserrat font-bold mb-5 md:mb-10 md:text-2xl'}>{t('navbar_title_projects')}</h1>
             <div className={"w-11/12 flex flex-col justify-center items-center mb-10"}>
                 <Project
                     projectName={t('project_taskmanager_title')}
