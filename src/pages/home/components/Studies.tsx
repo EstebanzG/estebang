@@ -7,7 +7,7 @@ function Studies() {
 
     return (
         <div className={"w-10/12 mt-3 md:w-3/12 md:mt-0"}>
-            <h3 className={"font-montserrat mb-3 w-fit group flex items-center"}>
+            <h3 className={"font-montserrat font-semibold mb-3 w-fit group flex items-center"}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
