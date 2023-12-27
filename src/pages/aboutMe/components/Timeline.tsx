@@ -17,7 +17,7 @@ function Timeline({items}: props) {
     })
 
     return (
-        <div className={"relative w-full h-56 md:h-48"}>
+        <div className={"relative w-full h-64 md:h-48"}>
             <div className={"absolute w-full h-full flex flex-col justify-center"}>
                 <div className={"w-full flex justify-between pb-2 md:w-11/12"}>
                     {items.map((item) => {
