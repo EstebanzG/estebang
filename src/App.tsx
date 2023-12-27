@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import './common/i18n'
 import Projects from "./pages/projects/Projects";
 import Contact from "./pages/contact/Contact";
+import AboutMe from "./pages/aboutMe/AboutMe";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="" element={ <Home />} />
           <Route path="/projects" element={ <Projects />} />
           <Route path="/contact" element={ <Contact />} />
+          <Route path="/about-me" element={ <AboutMe />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>

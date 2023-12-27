@@ -9,6 +9,9 @@ module.exports = {
         'montserrat': ['Montserrat'],
         'lato': ['Lato'],
         'garamond': ['Garamond']
+      },
+      transitionDuration: {
+        '2000': '2000ms',
       }
     }
   },

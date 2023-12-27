@@ -20,6 +20,7 @@ function Navbar({currentPage}: props) {
 
     const changeLanguage = () => {
         const newLanguage = i18n.language === FR ? EN : FR;
+        localStorage.setItem('selected-language', newLanguage)
         i18n.changeLanguage(newLanguage).then();
     };
 
@@ -27,13 +28,13 @@ function Navbar({currentPage}: props) {
         <header className="w-11/12 pb-8 pt-8 h-fit md:flex md:justify-end">
             <div className={`w-full flex justify-end items-center`}>
                 <div className={"w-full md:w-4/12 flex justify-between"}>
-                    <a className={"font-montserrat w-2/12"} href={"/"}>
-                        <span
-                            className={"bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_1px] bg-no-repeat hover:bg-[length:100%_1px] transition-all duration-500 ease-out"}>
-                            {t('Home')}
-                        </span>
-                    </a>
-                    <div className={"w-9/12 flex justify-between"}>
+                    <div className={"w-full flex justify-between"}>
+                        <a className={"font-montserrat"} href={"/"}>
+                            <span
+                                className={"bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_1px] bg-no-repeat hover:bg-[length:100%_1px] transition-all duration-500 ease-out"}>
+                                {t('Home')}
+                            </span>
+                        </a>
                         {currentPage !== PROJECT ?
                             <a className={"font-montserrat"} href={"/projects"}>
                             <span
@@ -43,7 +44,7 @@ function Navbar({currentPage}: props) {
                             </a> : ''
                         }
                         {currentPage !== ABOUT_ME ?
-                            <a className={"font-montserrat"} href={"/"}>
+                            <a className={"font-montserrat"} href={"/about-me"}>
                                 <span
                                     className={"bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_1px] bg-no-repeat hover:bg-[length:100%_1px] transition-all duration-500 ease-out"}>
                                     {t('navbar_title_about_me')}
