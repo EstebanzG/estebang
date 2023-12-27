@@ -13,7 +13,7 @@ i18n.use(initReactI18next).init({
             translation: languages.en,
         },
     },
-    lng: 'en',
+    lng: localStorage.getItem('selected-language') ?? 'en',
     fallbackLng: 'fr',
     interpolation: {
         escapeValue: false,

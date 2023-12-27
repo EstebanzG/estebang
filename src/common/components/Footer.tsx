@@ -10,6 +10,7 @@ function Footer() {
 
     const changeLanguage = () => {
         const newLanguage = i18n.language === FR ? EN : FR;
+        localStorage.setItem('selected-language', newLanguage)
         i18n.changeLanguage(newLanguage).then();
     };
 
