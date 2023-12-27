@@ -1,5 +1,4 @@
 import React from 'react';
-import {useTranslation} from 'react-i18next';
 import {MapContainer, TileLayer} from 'react-leaflet'
 import 'leaflet/dist/leaflet.css';
 

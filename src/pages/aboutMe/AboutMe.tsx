@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Navbar from "../../common/components/Navbar";
-import SectionWho from "./components/SectionWho";
 import Timeline from "./components/Timeline";
 import {item} from "../../common/database.type";
 
