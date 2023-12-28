@@ -64,12 +64,12 @@ function AboutMe() {
                     </div>
                     <hr className={"bg-gray-500 w-full mt-8 mb-4"}/>
                     <div className={"w-full font-montserrat"}>
-                        <h3 className={"mb-2 font-semibold"}>{t('about_me_studies_title')}</h3>
+                        <h2 className={"mb-2 font-semibold"}>{t('about_me_studies_title')}</h2>
                         <Timeline items={studies}/>
                     </div>
                     <hr className={"bg-gray-500 w-full mt-8 mb-4"}/>
                     <div className={"w-full font-montserrat"}>
-                        <h3 className={"mb-2 font-semibold"}>{t('about_me_job_title')}</h3>
+                        <h2 className={"mb-2 font-semibold"}>{t('about_me_job_title')}</h2>
                         <Timeline items={jobs}/>
                     </div>
                 </div>

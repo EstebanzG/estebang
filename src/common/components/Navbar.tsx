@@ -25,9 +25,9 @@ function Navbar({currentPage}: props) {
     };
 
     return (
-        <header className="w-11/12 pb-8 pt-8 h-fit md:flex md:justify-end">
+        <header className="w-11/12 pb-8 pt-8 h-fit text-xs md:text-lg md:flex md:justify-end">
             <div className={`w-full flex justify-end items-center`}>
-                <div className={"w-full md:w-4/12 flex justify-between"}>
+                <div className={"w-full md:w-6/12 flex justify-between"}>
                     <div className={"w-full flex justify-between"}>
                         <a className={"font-montserrat"} href={"/"}>
                             <span

@@ -25,7 +25,7 @@ function FormMessage() {
                 event.currentTarget,
                 process.env.REACT_APP_EMAILJS_T0KEN
             )
-                .then(r => setSendingSucess(true))
+                .then(() => setSendingSucess(true))
                 .catch(() => setSendingFailed(true))
                 .finally(() => setIsLoading(false))
             ;
@@ -98,7 +98,7 @@ function FormMessage() {
                     </div>
                     <div className={"w-full flex justify-end"}>
                         <button type={"submit"}
-                                className={"bg-gray-400 text-white p-2 rounded w-5/12 flex justify-center"}>
+                                className={"bg-gray-600 text-white p-2 rounded w-5/12 flex justify-center"}>
                             {isLoading ?
                                 <>
                                     <svg aria-hidden="true"

@@ -23,6 +23,7 @@ function Timeline({items}: props) {
                     {items.map((item) => {
                         return (
                             <NameBox
+                                key={item.name}
                                 item={item}
                             />
                         )
@@ -33,6 +34,7 @@ function Timeline({items}: props) {
                     {items.map((item) => {
                         return (
                             <YearBox
+                                key={item.name}
                                 item={item}
                             />
                         )
