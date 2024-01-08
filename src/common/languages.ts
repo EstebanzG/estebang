@@ -97,7 +97,7 @@ const languages = {
         about_me_studies_imt_title: 'Engineering degree specialising in software engineering (FIL)',
         about_me_studies_imt_where: 'IMT Atlantique',
         about_me_job_title: 'My experiences',
-        about_me_job_pladis_title: 'Apprentices IT Technician',
+        about_me_job_pladis_title: 'Apprentice IT Technician',
         about_me_job_kosmos_title: 'Apprentice software engineers',
     },
 };
